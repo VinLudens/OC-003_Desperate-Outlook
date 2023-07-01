@@ -7,6 +7,7 @@
 
 \header {
   title = "Desperate Outlook"
+  subtitle = "Original Composition No. 3"
   composer = "Kevin L. Biewesch"	
   date = "29.8.2018"
   %meter = "67"
