@@ -5,12 +5,18 @@
 \include "right.ly"
 \include "dynamics.ly"
 
+date = #(strftime "%B %d %Y" (localtime (current-time)))
 \header {
   title = "Desperate Outlook"
   subtitle = "Original Composition No. 3"
   composer = "Kevin L. Biewesch"	
-  date = "29.8.2018"
+  % date = "29.8.2018"
   %meter = "67"
+  tagline = \markup { \center-column {
+    \with-url #"https://www.youtube.com/@VinLudens"
+    \line { "Engraving with Lilypond" $(lilypond-version) \char ##x2014 "https://www.youtube.com/@VinLudens" }
+    \line { \small \italic {  August 29 2018  } }
+  } }
 }
 
 \paper {
