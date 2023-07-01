@@ -91,8 +91,8 @@ right = \relative c {
     }
   >> \oneVoice
 
-  <g b e>2 d8 fis16 a8 d ~ d16 |
-  <a cis e>2 e8 a16 cis8 e8 ~ e16 |
+  <g b e>2 d8 fis16 a8 d8. |
+  <a cis e>2 e8 a16 cis8 e8. |
   <d fis a d>32 <d fis a d> ~ <d fis a d>8. ~ <d fis a d>2. |
 
   << { \voiceOne 
@@ -148,9 +148,9 @@ right = \relative c {
       <d g b d>8 <cis cis'> 16 <b b'> ~ <b b'>2 <cis cis'>16 <d d'> <e e'>8 |
       <d fis a d>8 <cis cis'>16 <a a'> ~ <a a'>2 <cis cis'>16 <d d'> <e e'>8 |
       <g b d g>8 <fis fis'>16 <b, b'> ~ <b b'> <e e'> <g b d g>8 <fis fis'>16 <d d'> ~ <d d'>4. |
-      <e g b e>8 <d d'>16 <cis cis'> ~ <cis cis'>8 <e g b e>8[ <d d'>16 <cis cis'>] ~ <cis cis'>8 <e e'>8[ <cis cis'>] |
+      \oneVoice <e g b e>8 <d d'>16 <cis cis'> ~ <cis cis'>8 <e g b e>8[ <d d'>16 <cis cis'>] ~ <cis cis'>8 <e e'>8[ <cis cis'>] |
       
-      r4 r4 <fis b d fis>2 \arpeggio \fermata |
+      \voiceOne r2 <fis b d fis>2 \arpeggio \fermata |
     }
     \new Voice { \voiceTwo 
       s4 r8 <e g>16[ <e g>16 <e g>16 <e g>16 <e g>16 <e g>16] s4 |

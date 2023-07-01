@@ -27,6 +27,10 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
   oddHeaderMarkup = \evenHeaderMarkup
 }
 
+\include "oll-core/package.ily"
+\loadPackage edition-engraver
+\include "editions.ly"
+
 \score {
   \new PianoStaff \with {
     instrumentName = "Piano"
@@ -39,7 +43,12 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
       midiInstrument = "acoustic grand"
     } { \clef bass \left }
   >>
-  \layout { }
+  \layout {
+    \context {
+      \Score
+      \editionID ##f music
+    }
+  }
   \midi {
     %\tempo 4=100
   }

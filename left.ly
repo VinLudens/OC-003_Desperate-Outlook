@@ -37,12 +37,12 @@ left = \relative c, {
   e'16[ fis gis fis a gis fis gis] b,[ d e d fis e d e] |
   d16[ fis g fis g a g fis] a,[ cis d cis d e d cis] |
   << { \voiceOne 
-      r16. fis32[ gis16 fis b gis fis gis] r16. d32[ e16 d a' e d e] |
-      r16. e32[ fis16 e c' fis, e fis] r16. cis32[ d16 cis g' d cis d] |
+      r16. \ottava 0 fis32[ gis16 fis b gis fis gis] r16. \ottava 0 d32[ e16 d a' e d e] |
+      r16. \ottava 0 e32[ fis16 e c' fis, e fis] r16. \ottava 0 cis32[ d16 cis g' d cis d] |
     }
     \new Voice { \voiceTwo 
-      e,2 b2 |
-      d2 a2 |
+      \ottava -1 e,2 \ottava -1  b2 |
+      \ottava -1 d2 \ottava -1 a2 |
     }
   >> \oneVoice
   
@@ -91,8 +91,8 @@ left = \relative c, {
     }
   >> \oneVoice
 
-  b,8 d16 g8 b ~ b16 g8 b16 d fis4 |
-  cis,8 e16 a8 cis ~ cis16 a8 cis16 e a4 |
+  b,8 d16 g8 b8. g8 b16 d fis4 |
+  cis,8 e16 a8 cis8. a8 cis16 e a4 |
   <d,, g d'>32 <d g d'>32 ~ <d g d'>8. ~ <d g d'>4 \tuplet 7/8 { d'32 a fis d a fis d ~ } d4 \fermata |
   
   << { \voiceOne 
@@ -152,7 +152,7 @@ left = \relative c, {
 <<
   { <b b,>1 }
   \\
-  { r4 r4 <a' d fis>2 \arpeggio }
+  { r2 <a' d fis>2 \arpeggio }
 >>
   
 }
